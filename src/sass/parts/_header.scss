@@ -1,0 +1,62 @@
+.header{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        max-width: 1440px;        
+        z-index: 9;
+    &__content{        
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 4rem;
+    }
+    &__logo{
+        flex-basis: 63%;
+        font-family: "Epilogue-Bold";
+        font-size: 2rem;
+        line-height: 2.5rem;
+        color: #2F542B;
+    }
+    &__search{
+        width: 3rem;
+        height: 3rem;
+        margin-right: 8rem;
+    }
+    &__search-icon{        
+        width: 2.3rem;
+        height: 2.4rem;   
+    }
+    &__menu-btn{
+        position: relative;
+        padding: 0;
+        width: 3rem;
+        height: 3rem; 
+        &::before{
+            content: '';
+            position: absolute;
+            top: 0.5rem;
+            right: 0;            
+            width: 2.5rem;
+            height: 0.2rem;
+            background-color: #000;
+            box-shadow: 1px 2px 4px #504d4d;
+        }
+        &::after{
+            content: '';
+            position: absolute;
+            top: 1.5rem;
+            right: 0;            
+            width: 2rem;
+            height: 0.2rem;
+            background-color: #000;
+            box-shadow: 1px 2px 4px #504d4d;
+        }
+    }
+    
+}
+
+.mobile-menu{
+    display: none;
+}
+

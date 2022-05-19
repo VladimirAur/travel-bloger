@@ -1,0 +1,36 @@
+{
+    "editor.tokenColorCustomizations": {
+                
+            "textMateRules": [
+                {
+                    "scope": "entity.name.function",
+                    "settings": {
+                        "foreground": "#709b2b"
+                    }
+                },
+                {
+                    "scope": "comment",
+                    "settings": {
+                        "foreground": "#9fa19e"
+                    }
+                },
+                {
+                    "scope": "punctuation.definition.tag",
+                    "settings": {
+                        "foreground": "#569CD6"
+                    }
+                },
+                {
+                    "scope": "variable.language",
+                    "settings": {
+                        "foreground": "#b94637"
+                    }
+                },
+            
+                
+                
+
+            ],
+        
+    },
+}

@@ -1,0 +1,25 @@
+.articles{
+    padding: 4rem;
+    &__content{
+        display: flex;
+        justify-content: start;
+        align-content: flex-start;
+        flex-flow: row wrap;        
+    }
+    &__info{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &__title{
+        flex-basis: 50%;
+        font-family: $semi-bold;
+        font-size: 5rem;
+        letter-spacing: -0.025em;
+        color: #41413C;
+        text-transform: uppercase;
+    }
+    
+    
+
+}

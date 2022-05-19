@@ -1,0 +1,174 @@
+.social{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    &::before{
+        position: absolute;
+        top: -60%;
+        left: 50%;
+        transform: translateX(-50%);
+        content: '';
+        width: 1px;
+        height: 10rem;
+        background-color: #000000; 
+    }
+    &::after{
+        position: absolute;
+        bottom: -60%;
+        left: 50%;
+        transform: translateX(-50%);
+        content: '';
+        width: 1px;
+        height: 10rem;
+        background-color: #000000;
+    }
+    &__link{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 2rem;
+        padding: 0.7rem;
+        border: 2px solid #000000;
+        border-radius: 50%;        
+        &:last-child {
+            margin-bottom: 0;
+        }
+        &-skype{
+            animation:  2s linear 1s skype_glow;
+            svg{
+                animation:  2s linear 1s skype-icon_glow;        
+            }
+        }
+        &-viber{
+            animation:  2s linear 3s viber_glow;
+            svg{
+                animation:  2s linear 3s viber-icon_glow;        
+            }
+        }    
+        &-whatsapp{
+            animation:  2s linear 5s whatsapp_glow;
+            svg{
+                animation:  2s linear 5s whatsapp-icon_glow;        
+            }
+        }
+
+        &-telegram{
+            animation:  2s linear 7s telegram_glow;
+            svg{
+                animation:  2s linear 7s telegram-icon_glow;        
+            }
+        }  
+    }
+    &__icon{        
+        width: 1.6rem;
+        height: 1.6rem;                
+    }    
+    
+}
+    
+
+.social--none{
+    display: none;
+}
+
+
+@keyframes skype_glow {
+    0%{
+        border-color: #000000;          
+    }
+    50%{
+        border-color: #00aff0;
+        box-shadow: 0 0 25px #00aff0;              
+    }  
+    100%{
+        border-color: #000000;
+    }
+}
+
+@keyframes skype-icon_glow {
+    0%{
+        fill: #000000;          
+    }
+    50%{
+        fill: #00aff0;                      
+    }  
+    100%{
+        fill: #000000;
+    }
+}
+
+  @keyframes viber_glow {
+    0%{
+        border-color: #000000;          
+    }
+    50%{
+        border-color: #7360f2;
+        box-shadow: 0 0 25px #7360f2;              
+    }  
+    100%{
+        border-color: #000000;
+    }
+  }
+
+  @keyframes viber-icon_glow {
+    0%{
+        fill: #000000;          
+    }
+    50%{
+        fill: #7360f2;                      
+    }  
+    100%{
+        fill: #000000;
+    }
+  }
+
+  @keyframes whatsapp_glow {
+    0%{
+        border-color: #000000;          
+    }
+    50%{
+        border-color: #25D366;
+        box-shadow: 0 0 25px #25D366;              
+    }  
+    100%{
+        border-color: #000000;
+    }
+  }
+
+  @keyframes whatsapp-icon_glow {
+    0%{
+        fill: #000000;          
+    }
+    50%{
+        fill: #25D366;                      
+    }  
+    100%{
+        fill: #000000;
+    }
+  }
+
+  @keyframes telegram_glow {
+    0%{
+        border-color: #000000;          
+    }
+    50%{
+        border-color: #2AABEE;
+        box-shadow: 0 0 25px #2AABEE;              
+    }  
+    100%{
+        border-color: #000000;
+    }
+  }
+
+  @keyframes telegram-icon_glow {
+    0%{
+        fill: #000000;          
+    }
+    50%{
+        fill: #2AABEE;                      
+    }  
+    100%{
+        fill: #000000;
+    }
+  }
+    

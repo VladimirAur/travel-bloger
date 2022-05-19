@@ -2,6 +2,9 @@ const gulp = require('gulp');
 const sass = require('gulp-sass')(require('sass'));
 const browserSync = require('browser-sync');
 const autoprefixer = require('gulp-autoprefixer');
+const svgSprite = require('gulp-svg-sprite');
+const imagemin = require('gulp-tinypng');
+
 
 const ttf2woff = require('gulp-ttf2woff');
 const ttf2woff2 = require('gulp-ttf2woff2');
@@ -14,6 +17,26 @@ gulp.task('server', function() {
         browser: 'chrome',
     });
 });
+
+gulp.task('compress', function () {
+  return gulp.src('doc/img/**/*.jpg')
+      .pipe(imagemin('GDdff3QrKWvRL1hrqHnvYZyD3y0Q4LXX'))
+      .pipe(gulp.dest('src/img/'));
+});
+
+gulp.task('sprite', function() {
+    return gulp.src('doc/svg/*.svg')
+      .pipe(
+        svgSprite({
+          mode: {
+            stack: {
+              sprite: '../svg-sprite.svg',               
+            }
+          }
+        })
+      )
+      .pipe(gulp.dest('src/img/'))
+  })
 
 gulp.task('fonts', function(){
     gulp.src(['src/fonts/*.ttf'])

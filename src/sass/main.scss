@@ -2,10 +2,24 @@
 @import 'base/fonts';
 @import 'base/variables';
 
-h1{
-    font-family: "Roboto-Regular";
-    display: flex;
-    flex-wrap: wrap;
-    flex-grow: 1;    
-    background-color: $main-color;
+.container{
+    position: relative;
+    max-width: 1440px;
+    margin: 0 auto;
+    background: url(../img/bg-lightl-890.jpg) repeat;    
+}
+
+
+@import 'parts/header';
+@import 'parts/slider';
+@import 'parts/articles';
+@import 'parts/card';
+@import 'parts/posts';
+@import 'parts/profile';
+
+@import 'parts/social';
+@import 'parts/button';
+
+p{
+    font-size: 2rem;
 }
