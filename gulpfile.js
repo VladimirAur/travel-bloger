@@ -25,7 +25,7 @@ gulp.task('compress', function () {
 });
 
 gulp.task('sprite', function() {
-    return gulp.src('doc/svg/*.svg')
+    return gulp.src('src/img/svg/*.svg')
       .pipe(
         svgSprite({
           mode: {
