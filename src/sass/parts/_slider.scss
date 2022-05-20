@@ -11,14 +11,14 @@
         transform: translateY(-50%);        
     }
     &__prev{
-        padding: 1rem 1.2rem;        
+        padding: 0.6rem 0.7rem;        
         border-radius: 50%;
         background-color: aliceblue;
         box-shadow: 0 0 8px #212121;
     }
     &__next{
         margin-bottom: 0.5rem;
-        padding: 1rem 1.2rem;        
+        padding: 0.6rem 0.7rem;        
         border-radius: 50%;
         background-color: aliceblue;
         box-shadow: 0 0 8px #212121;
@@ -32,8 +32,7 @@
         background-color: $main-color;
     }
     &__icon{
-        width: 2.5rem;
-        height: 2.5rem;
+        font-size: 3rem;
     }    
     &__content{
         display: flex;        

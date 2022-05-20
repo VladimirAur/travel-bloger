@@ -19,7 +19,7 @@
         transform: translateY(-50%);
         padding: 5rem 8rem;
         text-align: center;
-        background: rgba(255, 255, 255, 0.7);
+        background: rgba(255, 255, 255, 0.4);
         border-radius: 5px;
     }
     &__title{
@@ -44,7 +44,7 @@
         font-family: $regular;
         line-height: 2.4rem;
         letter-spacing: 0.015em;
-        color: #686868;
+        color: #3d3d3d;        
     }
     &__button{
         margin-bottom: 4rem;
@@ -73,34 +73,33 @@
         &:last-child {
             margin-right: 0;
         }
-        &-skype{
-            animation:  2s linear 1s skype_glow;
-            svg{
+        &-skype{            
+            span{
                 animation:  2s linear 1s skype-icon_glow;        
             }
         }
-        &-viber{
-            animation:  2s linear 3s viber_glow;
-            svg{
+        &-viber{            
+            span{
                 animation:  2s linear 3s viber-icon_glow;        
             }
         }    
-        &-whatsapp{
-            animation:  2s linear 5s whatsapp_glow;
-            svg{
+        &-whatsapp{            
+            span{
                 animation:  2s linear 5s whatsapp-icon_glow;        
             }
         }
 
-        &-telegram{
-            animation:  2s linear 7s telegram_glow;
-            svg{
+        &-telegram{            
+            span{
                 animation:  2s linear 7s telegram-icon_glow;        
             }
         } 
     }
     &__icon{        
-        width: 2.5rem;
-        height: 2.5rem;                
+        font-size: 2rem;
+        color: #000;                
+    }
+    .icon-social-skype-outline{
+        font-size: 2.4rem;
     }     
 }

@@ -26,45 +26,55 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        margin-bottom: 2rem;
-        padding: 0.7rem;
+        margin-bottom: 1.5rem;
+        padding: 0.8rem;
         border: 2px solid #000000;
         border-radius: 50%;        
         &:last-child {
-            margin-bottom: 0;
-        }
+            margin-bottom: 0;            
+        }              
         &-skype{
             animation:  2s linear 1s skype_glow;
-            svg{
+            span{
                 animation:  2s linear 1s skype-icon_glow;        
             }
         }
         &-viber{
             animation:  2s linear 3s viber_glow;
-            svg{
+            span{
                 animation:  2s linear 3s viber-icon_glow;        
             }
         }    
         &-whatsapp{
             animation:  2s linear 5s whatsapp_glow;
-            svg{
+            span{
                 animation:  2s linear 5s whatsapp-icon_glow;        
             }
         }
 
         &-telegram{
             animation:  2s linear 7s telegram_glow;
-            svg{
+            span{
                 animation:  2s linear 7s telegram-icon_glow;        
             }
         }  
     }
     &__icon{        
-        width: 1.6rem;
-        height: 1.6rem;                
+        font-size: 1.6rem;
+        color: #000000;                        
+    }
+    .icon-social-skype-outline{
+        font-size: 1.8rem;
+    }
+    
+    .icon-telegram{
+        font-size: 1.3rem;
+        margin-right: 2px;
     }    
     
 }
+
+
     
 
 .social--none{
@@ -87,13 +97,13 @@
 
 @keyframes skype-icon_glow {
     0%{
-        fill: #000000;          
+        color: #000000;          
     }
     50%{
-        fill: #00aff0;                      
+        color: #00aff0;                      
     }  
     100%{
-        fill: #000000;
+        color: #000000;
     }
 }
 
@@ -112,13 +122,13 @@
 
   @keyframes viber-icon_glow {
     0%{
-        fill: #000000;          
+        color: #000000;          
     }
     50%{
-        fill: #7360f2;                      
+        color: #7360f2;                      
     }  
     100%{
-        fill: #000000;
+        color: #000000;
     }
   }
 
@@ -137,13 +147,13 @@
 
   @keyframes whatsapp-icon_glow {
     0%{
-        fill: #000000;          
+        color: #000000;          
     }
     50%{
-        fill: #25D366;                      
+        color: #25D366;                      
     }  
     100%{
-        fill: #000000;
+        color: #000000;
     }
   }
 
@@ -162,13 +172,13 @@
 
   @keyframes telegram-icon_glow {
     0%{
-        fill: #000000;          
+        color: #000000;          
     }
     50%{
-        fill: #2AABEE;                      
+        color: #2AABEE;                      
     }  
     100%{
-        fill: #000000;
+        color: #000000;
     }
   }
     

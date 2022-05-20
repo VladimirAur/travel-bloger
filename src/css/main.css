@@ -108,6 +108,55 @@ a, a:hover {
   font-style: normal;
   font-weight: normal;
 }
+@font-face {
+  font-family: "icomoon";
+  src: url("../fonts/icomoon.eot?952pbv");
+  src: url("../fonts/icomoon.eot?952pbv#iefix") format("embedded-opentype"), url("../fonts/icomoon.ttf?952pbv") format("truetype"), url("../fonts/icomoon.woff?952pbv") format("woff"), url("../fonts/icomoon.svg?952pbv#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+[class^=icon-], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: "icomoon" !important;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-viber:before {
+  content: "\e900";
+}
+
+.icon-telegram:before {
+  content: "\e901";
+}
+
+.icon-social-skype-outline:before {
+  content: "\e902";
+}
+
+.icon-navigate_next:before {
+  content: "\e903";
+}
+
+.icon-navigate_before:before {
+  content: "\e904";
+}
+
+.icon-search:before {
+  content: "\e905";
+}
+
+.icon-whatsapp:before {
+  content: "\ea93";
+}
+
 .container {
   position: relative;
   max-width: 1440px;
@@ -149,16 +198,15 @@ a, a:hover {
   margin-right: 8rem;
 }
 .header__search-icon {
-  width: 2.3rem;
-  height: 2.4rem;
+  font-size: 2.3rem;
 }
-.header__menu-btn {
+.header__menu-button {
   position: relative;
   padding: 0;
   width: 3rem;
   height: 3rem;
 }
-.header__menu-btn::before {
+.header__menu-button::before {
   content: "";
   position: absolute;
   top: 0.5rem;
@@ -169,7 +217,7 @@ a, a:hover {
   -webkit-box-shadow: 1px 2px 4px #504d4d;
   box-shadow: 1px 2px 4px #504d4d;
 }
-.header__menu-btn::after {
+.header__menu-button::after {
   content: "";
   position: absolute;
   top: 1.5rem;
@@ -205,7 +253,7 @@ a, a:hover {
   transform: translateY(-50%);
 }
 .slider__prev {
-  padding: 1rem 1.2rem;
+  padding: 0.6rem 0.7rem;
   border-radius: 50%;
   background-color: aliceblue;
   -webkit-box-shadow: 0 0 8px #212121;
@@ -213,7 +261,7 @@ a, a:hover {
 }
 .slider__next {
   margin-bottom: 0.5rem;
-  padding: 1rem 1.2rem;
+  padding: 0.6rem 0.7rem;
   border-radius: 50%;
   background-color: aliceblue;
   -webkit-box-shadow: 0 0 8px #212121;
@@ -230,8 +278,7 @@ a, a:hover {
   background-color: #DDC8BA;
 }
 .slider__icon {
-  width: 2.5rem;
-  height: 2.5rem;
+  font-size: 3rem;
 }
 .slider__content {
   display: -webkit-box;
@@ -560,7 +607,7 @@ a, a:hover {
   transform: translateY(-50%);
   padding: 5rem 8rem;
   text-align: center;
-  background: rgba(255, 255, 255, 0.7);
+  background: rgba(255, 255, 255, 0.4);
   border-radius: 5px;
 }
 .profile__title {
@@ -585,7 +632,7 @@ a, a:hover {
   font-family: "Roboto-Regular", sans-serif;
   line-height: 2.4rem;
   letter-spacing: 0.015em;
-  color: #686868;
+  color: #3d3d3d;
 }
 .profile__button {
   margin-bottom: 4rem;
@@ -625,41 +672,28 @@ a, a:hover {
 .profile__link:last-child {
   margin-right: 0;
 }
-.profile__link-skype {
-  -webkit-animation: 2s linear 1s skype_glow;
-  animation: 2s linear 1s skype_glow;
-}
-.profile__link-skype svg {
+.profile__link-skype span {
   -webkit-animation: 2s linear 1s skype-icon_glow;
   animation: 2s linear 1s skype-icon_glow;
 }
-.profile__link-viber {
-  -webkit-animation: 2s linear 3s viber_glow;
-  animation: 2s linear 3s viber_glow;
-}
-.profile__link-viber svg {
+.profile__link-viber span {
   -webkit-animation: 2s linear 3s viber-icon_glow;
   animation: 2s linear 3s viber-icon_glow;
 }
-.profile__link-whatsapp {
-  -webkit-animation: 2s linear 5s whatsapp_glow;
-  animation: 2s linear 5s whatsapp_glow;
-}
-.profile__link-whatsapp svg {
+.profile__link-whatsapp span {
   -webkit-animation: 2s linear 5s whatsapp-icon_glow;
   animation: 2s linear 5s whatsapp-icon_glow;
 }
-.profile__link-telegram {
-  -webkit-animation: 2s linear 7s telegram_glow;
-  animation: 2s linear 7s telegram_glow;
-}
-.profile__link-telegram svg {
+.profile__link-telegram span {
   -webkit-animation: 2s linear 7s telegram-icon_glow;
   animation: 2s linear 7s telegram-icon_glow;
 }
 .profile__icon {
-  width: 2.5rem;
-  height: 2.5rem;
+  font-size: 2rem;
+  color: #000;
+}
+.profile .icon-social-skype-outline {
+  font-size: 2.4rem;
 }
 
 .social {
@@ -704,8 +738,8 @@ a, a:hover {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  margin-bottom: 2rem;
-  padding: 0.7rem;
+  margin-bottom: 1.5rem;
+  padding: 0.8rem;
   border: 2px solid #000000;
   border-radius: 50%;
 }
@@ -716,7 +750,7 @@ a, a:hover {
   -webkit-animation: 2s linear 1s skype_glow;
   animation: 2s linear 1s skype_glow;
 }
-.social__link-skype svg {
+.social__link-skype span {
   -webkit-animation: 2s linear 1s skype-icon_glow;
   animation: 2s linear 1s skype-icon_glow;
 }
@@ -724,7 +758,7 @@ a, a:hover {
   -webkit-animation: 2s linear 3s viber_glow;
   animation: 2s linear 3s viber_glow;
 }
-.social__link-viber svg {
+.social__link-viber span {
   -webkit-animation: 2s linear 3s viber-icon_glow;
   animation: 2s linear 3s viber-icon_glow;
 }
@@ -732,7 +766,7 @@ a, a:hover {
   -webkit-animation: 2s linear 5s whatsapp_glow;
   animation: 2s linear 5s whatsapp_glow;
 }
-.social__link-whatsapp svg {
+.social__link-whatsapp span {
   -webkit-animation: 2s linear 5s whatsapp-icon_glow;
   animation: 2s linear 5s whatsapp-icon_glow;
 }
@@ -740,13 +774,20 @@ a, a:hover {
   -webkit-animation: 2s linear 7s telegram_glow;
   animation: 2s linear 7s telegram_glow;
 }
-.social__link-telegram svg {
+.social__link-telegram span {
   -webkit-animation: 2s linear 7s telegram-icon_glow;
   animation: 2s linear 7s telegram-icon_glow;
 }
 .social__icon {
-  width: 1.6rem;
-  height: 1.6rem;
+  font-size: 1.6rem;
+  color: #000000;
+}
+.social .icon-social-skype-outline {
+  font-size: 1.8rem;
+}
+.social .icon-telegram {
+  font-size: 1.3rem;
+  margin-right: 2px;
 }
 
 .social--none {
@@ -782,24 +823,24 @@ a, a:hover {
 }
 @-webkit-keyframes skype-icon_glow {
   0% {
-    fill: #000000;
+    color: #000000;
   }
   50% {
-    fill: #00aff0;
+    color: #00aff0;
   }
   100% {
-    fill: #000000;
+    color: #000000;
   }
 }
 @keyframes skype-icon_glow {
   0% {
-    fill: #000000;
+    color: #000000;
   }
   50% {
-    fill: #00aff0;
+    color: #00aff0;
   }
   100% {
-    fill: #000000;
+    color: #000000;
   }
 }
 @-webkit-keyframes viber_glow {
@@ -830,24 +871,24 @@ a, a:hover {
 }
 @-webkit-keyframes viber-icon_glow {
   0% {
-    fill: #000000;
+    color: #000000;
   }
   50% {
-    fill: #7360f2;
+    color: #7360f2;
   }
   100% {
-    fill: #000000;
+    color: #000000;
   }
 }
 @keyframes viber-icon_glow {
   0% {
-    fill: #000000;
+    color: #000000;
   }
   50% {
-    fill: #7360f2;
+    color: #7360f2;
   }
   100% {
-    fill: #000000;
+    color: #000000;
   }
 }
 @-webkit-keyframes whatsapp_glow {
@@ -878,24 +919,24 @@ a, a:hover {
 }
 @-webkit-keyframes whatsapp-icon_glow {
   0% {
-    fill: #000000;
+    color: #000000;
   }
   50% {
-    fill: #25D366;
+    color: #25D366;
   }
   100% {
-    fill: #000000;
+    color: #000000;
   }
 }
 @keyframes whatsapp-icon_glow {
   0% {
-    fill: #000000;
+    color: #000000;
   }
   50% {
-    fill: #25D366;
+    color: #25D366;
   }
   100% {
-    fill: #000000;
+    color: #000000;
   }
 }
 @-webkit-keyframes telegram_glow {
@@ -926,24 +967,24 @@ a, a:hover {
 }
 @-webkit-keyframes telegram-icon_glow {
   0% {
-    fill: #000000;
+    color: #000000;
   }
   50% {
-    fill: #2AABEE;
+    color: #2AABEE;
   }
   100% {
-    fill: #000000;
+    color: #000000;
   }
 }
 @keyframes telegram-icon_glow {
   0% {
-    fill: #000000;
+    color: #000000;
   }
   50% {
-    fill: #2AABEE;
+    color: #2AABEE;
   }
   100% {
-    fill: #000000;
+    color: #000000;
   }
 }
 .button {
