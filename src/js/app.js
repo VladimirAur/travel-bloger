@@ -1,5 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
-slider();
+// slider();
+mySlider();
 });
 
 
@@ -101,3 +102,20 @@ function slider(){
     addActiveClass(slideIndex);
     addInactiveClass(slideIndex);    
     };  // __{slider}
+
+
+    function mySlider() {
+        const slides = document.querySelectorAll('.slider__item');    
+        const slidesField = document.querySelector('.slider__content');
+        const prev = document.querySelector('.slider__prev');
+        const next = document.querySelector('.slider__next');
+        const width = window.getComputedStyle(slidesField).width; 
+
+        
+        slides[0].classList.add('slider__item--active');
+        slides[1].classList.add('slider__item--pasive');
+
+        next.addEventListener('click', () => {
+            
+        });
+    }

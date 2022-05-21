@@ -1,0 +1,91 @@
+@media (max-width: 1440px) {
+    .articles{ 
+        padding: calc(10px + (40 - 10) * ((100vw - 320px) / (1440 - 320)));
+     }
+     .articles__title{
+         font-size: calc(14px + (50 - 14) * ((100vw - 320px) / (1440 - 320)));
+     }
+     .posts{ 
+        padding: calc(10px + (40 - 10) * ((100vw - 320px) / (1440 - 320)));
+     }
+     .posts__title{
+         font-size: calc(14px + (35 - 14) * ((100vw - 320px) / (1440 - 320)));
+         margin-bottom: calc(10px + (30 - 10) * ((100vw - 320px) / (1440 - 320)));
+     }
+     .button{ 
+        --width: calc(110px + (170 - 110) * ((100vw - 320px) / (1440 - 320)));
+        --height: calc(25px + (60 - 25) * ((100vw - 320px) / (1440 - 320)));      
+        font-size: calc(12px + (15 - 12) * ((100vw - 320px) / (1440 - 320)));
+     }
+     .card--post .card__button{
+        font-size: calc(10px + (15 - 10) * ((100vw - 320px) / (1440 - 320)));
+        padding: calc(10px + (15 - 10) * ((100vw - 320px) / (1440 - 320))) 
+                 calc(20px + (50 - 20) * ((100vw - 320px) / (1440 - 320)));;
+     }
+     .card--post  .card__title{
+        margin: calc(10px + (20 - 10) * ((100vw - 320px) / (1440 - 320)))
+         0 calc(10px + (30 - 10) * ((100vw - 320px) / (1440 - 320))) 0;
+        font-size: calc(10px + (18 - 10) * ((100vw - 320px) / (1440 - 320)));
+     }
+     .profile{
+        padding: calc(10px + (40 - 10) * ((100vw - 320px) / (1440 - 320)));
+     }
+     .profile__info{
+        padding: calc(10px + (50 - 10) * ((100vw - 320px) / (1440 - 320))) 
+                 calc(10px + (80 - 10) * ((100vw - 320px) / (1440 - 320)));
+                 left: calc(20px + (130 - 20) * ((100vw - 320px) / (1440 - 320)));        
+     }
+     .profile__text{
+         font-size: calc(14px + (18 - 14) * ((100vw - 320px) / (1440 - 320)));
+     }
+     .profile__button{
+        font-size: calc(10px + (15 - 10) * ((100vw - 320px) / (1440 - 320)));
+        padding: calc(10px + (15 - 10) * ((100vw - 320px) / (1440 - 320))) 
+                 calc(20px + (50 - 20) * ((100vw - 320px) / (1440 - 320)));;
+     }
+}
+
+
+@media screen and (max-width: 1220px){
+    .card{
+		max-width: 32%;			
+	}
+}
+
+@media screen and (max-width: 846px){
+    .card{
+		max-width: 50%;			
+	}
+}
+
+@media screen and (max-width: 657px){
+    .card{
+        flex-basis: 47%;				
+	}
+    .profile__info{
+        max-width: 70%;
+    }
+}
+
+@media screen and (max-width: 375px){
+    .card{
+        flex-basis: 45%;				
+	}
+    .card__title{
+        font-size: 10px;				
+	}
+    .profile__info{
+        max-width: 80%;
+    }
+    .profile__title{
+        font-size: 1.8rem;
+    }
+    .profile__subtitle{
+        font-size: 1.2rem;
+        margin-bottom: 1rem;
+    }
+    .profile__button{
+        margin-bottom: 1.5rem;
+    }
+}
+

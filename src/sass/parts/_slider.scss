@@ -13,14 +13,14 @@
     &__prev{
         padding: 0.6rem 0.7rem;        
         border-radius: 50%;
-        background-color: aliceblue;
+        background-color: $main-color;
         box-shadow: 0 0 8px #212121;
     }
     &__next{
         margin-bottom: 0.5rem;
         padding: 0.6rem 0.7rem;        
         border-radius: 50%;
-        background-color: aliceblue;
+        background-color: $main-color;
         box-shadow: 0 0 8px #212121;
     }
     &__next:active{        
@@ -36,12 +36,13 @@
     }    
     &__content{
         display: flex;        
-        width: 70%;        
+        width: 100%;        
         transition: 1s all;        
     }
-    &__item{        
+    &__item{
+        display: none;        
         position: relative;
-        width: 100%;
+        width: 100%;        
         padding-left: 4rem;        
     }
     &__photo{
@@ -51,7 +52,7 @@
         height: 100%;
     }
     &__img{        
-        width: 40%;
+        width: 100%;
         margin-bottom: 5rem;                
     }
     &__info{
@@ -87,7 +88,8 @@
     &__text{
         display: none;
     }
-    &__item--active{        
+    &__item--active{
+        display: block;        
         .slider__img{
             width: 60%;
             transform: translateX(67%);            
@@ -136,6 +138,13 @@
             color: #212121;
             animation: 3s text-show;
         }    
+    }
+    &__item--pasive{
+        display: block;
+        width: 40%;
+        .social{
+            display: none;
+        }
     }
     
 }
