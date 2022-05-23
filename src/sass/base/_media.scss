@@ -83,6 +83,14 @@
     .card{
 		max-width: 32%;			
 	}
+    .social::before{
+        height: 6rem;
+        top: -30%;
+    }
+    .social::after{
+        height: 6rem;
+        bottom: -30%;
+    }
 }
 
 @media screen and (max-width: 1025px){    
@@ -90,12 +98,12 @@
         margin-bottom: 0;
     }
     .social::before{
-        height: 5rem;
-        top: -30%;
+        height: 4rem;
+        top: -20%;
     }
     .social::after{
-        height: 5rem;
-        bottom: -30%;
+        height: 4rem;
+        bottom: -20%;
     }
 }
 
@@ -105,10 +113,11 @@
 	}
 }
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 769px){
     .slider__wrapper{
         width: 100%;
     }
+   
     .header{
         position: static;
     }
@@ -143,9 +152,12 @@
        border: none;
        box-shadow: 1px 2px 4px #373737;
    }
-   .social::after, .social::before{
-       display: none;
-   }
+   .social::before, .social::after{
+    display: none;
+}
+
+    
+   
 }
 
 @media screen and (max-width: 375px){

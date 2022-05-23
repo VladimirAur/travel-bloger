@@ -16,16 +16,18 @@
                 <button class="header__search">
                     <span class="header__search-icon icon-search"></span>                                        
                 </button>             
-                <button class="header__menu-button" type="button"></button>
+                <div class="button-burger" role="navigation"></div>
             </div>
-            <nav class="mobile-menu">
-                <ul class="mobile-menu__list">
-                    <li class="mobile-menu__item"><a href="#" class="mobile-menu__link">Main</a></li>
-                    <li class="mobile-menu__item"><a href="#" class="mobile-menu__link">Articles</a></li>
-                    <li class="mobile-menu__item"><a href="#" class="mobile-menu__link">Posts</a></li>
-                    <li class="mobile-menu__item"><a href="#" class="mobile-menu__link">About</a></li>
-                </ul>
-            </nav>
+            <div class="menu">
+                <nav class="menu__wrapper">  
+                    <ul role="menu__items">
+                        <li class="menu__item"><a class="menu__link" href="#main" role="menuitem">Главная</a></li>
+                        <li class="menu__item"><a class="menu__link" href="#service" role="menuitem">Услуги</a></li>
+                        <li class="menu__item"><a class="menu__link" href="#project" role="menuitem">Проекты</a></li>
+                        <li class="menu__item"><a class="menu__link" href="#contact" role="menuitem">Контакты</a></li>				            
+                    </ul>
+                </nav>
+            </div>
         </section>
         <section class="slider">
             <div class="slider__wrapper">                
@@ -246,6 +248,7 @@
 
         <section class="posts">
             <h2 class="posts__title">Recent posts</h2>
+            
             <div class="posts__content">
                 <div class="card card--post">
                     <div class="card__photo">

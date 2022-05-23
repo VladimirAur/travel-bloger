@@ -26,6 +26,8 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        width: 2.5rem;
+        height: 2.5rem;
         margin-bottom: 1.5rem;
         padding: 0.8rem;
         border: 2px solid #000000;
@@ -86,11 +88,12 @@
 
 @keyframes skype_glow {
     0%{
-        border-color: #000000;          
+        border-color: #000000;                  
     }
     50%{
         border-color: #00aff0;
-        box-shadow: 0 0 25px #00aff0;              
+        box-shadow: 0 0 25px #00aff0;
+                     
     }  
     100%{
         border-color: #000000;
@@ -102,7 +105,8 @@
         color: #000000;          
     }
     50%{
-        color: #00aff0;                      
+        color: #00aff0;
+        font-size: 2.5rem;                      
     }  
     100%{
         color: #000000;
@@ -127,7 +131,8 @@
         color: #000000;          
     }
     50%{
-        color: #7360f2;                      
+        color: #7360f2;
+        font-size: 2.5rem;                       
     }  
     100%{
         color: #000000;
@@ -152,7 +157,8 @@
         color: #000000;          
     }
     50%{
-        color: #25D366;                      
+        color: #25D366; 
+        font-size: 2.5rem;                      
     }  
     100%{
         color: #000000;
@@ -177,7 +183,8 @@
         color: #000000;          
     }
     50%{
-        color: #2AABEE;                      
+        color: #2AABEE;
+        font-size: 2.5rem;                       
     }  
     100%{
         color: #000000;
