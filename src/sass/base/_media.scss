@@ -1,4 +1,37 @@
 @media (max-width: 1440px) {
+    .header__content{
+        padding: calc(10px + (40 - 10) * ((100vw - 320px) / (1440 - 320)));
+    }
+    .header__logo{
+        font-size: calc(16px + (20 - 16) * ((100vw - 320px) / (1440 - 320)));
+    }
+    .slider__item--active{
+        padding-right: calc(10px + (40 - 10) * ((100vw - 320px) / (1440 - 320)));
+        .slider__description{
+            margin-left: calc(10px + (70 - 10) * ((100vw - 320px) / (1440 - 320)));
+        }
+        .slider__title{
+            font-size: calc(14px + (80 - 14) * ((100vw - 320px) / (1440 - 320)));
+            margin-bottom: calc(10px + (20 - 10) * ((100vw - 320px) / (1440 - 320)));
+        }
+        .slider__subtitle{
+            margin-bottom: calc(10px + (80 - 10) * ((100vw - 320px) / (1440 - 320)));
+            font-size: calc(14px + (24 - 14) * ((100vw - 320px) / (1440 - 320)));
+        }
+        .slider__text{
+            font-size: calc(14px + (18 - 14) * ((100vw - 320px) / (1440 - 320)));
+        }
+    } 
+    .slider__title{
+        font-size: calc(14px + (18 - 14) * ((100vw - 320px) / (1440 - 320)));
+    }
+    .slider__img{
+        margin-bottom: calc(10px + (50 - 10) * ((100vw - 320px) / (1440 - 320)));
+    }
+    .slider__avatar{
+        width: calc(20px + (50 - 20) * ((100vw - 320px) / (1440 - 320)));
+        height: calc(20px + (50 - 20) * ((100vw - 320px) / (1440 - 320)));
+    }
     .articles{ 
         padding: calc(10px + (40 - 10) * ((100vw - 320px) / (1440 - 320)));
      }
@@ -52,10 +85,33 @@
 	}
 }
 
+@media screen and (max-width: 1025px){    
+    .slider__img{
+        margin-bottom: 0;
+    }
+    .social::before{
+        height: 5rem;
+        top: -30%;
+    }
+    .social::after{
+        height: 5rem;
+        bottom: -30%;
+    }
+}
+
 @media screen and (max-width: 846px){
     .card{
 		max-width: 50%;			
 	}
+}
+
+@media screen and (max-width: 768px){
+    .slider__wrapper{
+        width: 100%;
+    }
+    .header{
+        position: static;
+    }
 }
 
 @media screen and (max-width: 657px){
@@ -65,6 +121,31 @@
     .profile__info{
         max-width: 70%;
     }
+}
+
+@media screen and (max-width: 481px){    
+    .slider__item--active{        
+        width: 100%;
+        .slider__item-name{
+            display: block;
+        }
+        .slider__img{ 
+            width: 100%;          
+            transform: none;
+        }        
+        .slider__description{
+            display: none;
+        }
+        
+    }
+   .social__link{
+       background: rgba(255, 255, 255, 0.5);
+       border: none;
+       box-shadow: 1px 2px 4px #373737;
+   }
+   .social::after, .social::before{
+       display: none;
+   }
 }
 
 @media screen and (max-width: 375px){

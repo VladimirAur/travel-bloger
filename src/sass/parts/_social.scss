@@ -1,6 +1,6 @@
 .social{
     position: relative;
-    display: flex;
+    display: none;
     flex-direction: column;
     &::before{
         position: absolute;
@@ -29,7 +29,7 @@
         margin-bottom: 1.5rem;
         padding: 0.8rem;
         border: 2px solid #000000;
-        border-radius: 50%;        
+        border-radius: 50%;                
         &:last-child {
             margin-bottom: 0;            
         }              
