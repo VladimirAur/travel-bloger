@@ -62,4 +62,24 @@ gulp.task('watch', function(){
     gulp.watch("src/css/*.css").on("change", browserSync.reload)
 });
 
+gulp.task('build', function(){
+  gulp.src('src/index.html')
+  .pipe(gulp.dest("build"))
+
+  gulp.src('src/favicon.*')
+  .pipe(gulp.dest("build"))
+
+  gulp.src('src/css/*.css')
+  .pipe(gulp.dest("build/css"))
+
+  gulp.src('src/js/*.js')
+  .pipe(gulp.dest("build/js"))
+
+  gulp.src('src/fonts/**.*')
+  .pipe(gulp.dest("build/fonts"))
+  
+  return gulp.src('src/img/**/**.*')
+  .pipe(gulp.dest("build/img"))
+});
+
 gulp.task('default', gulp.parallel('server', 'styles', 'watch'));
