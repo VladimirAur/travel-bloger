@@ -791,6 +791,7 @@ a, a:hover {
   padding: 4rem;
 }
 .profile__content {
+  position: relative;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -840,6 +841,12 @@ a, a:hover {
   line-height: 2.4rem;
   letter-spacing: 0.015em;
   color: #3d3d3d;
+}
+.profile__description {
+  display: none;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+  font-family: "Roboto-Regular", sans-serif;
 }
 .profile__button {
   margin-bottom: 4rem;
@@ -901,6 +908,17 @@ a, a:hover {
 }
 .profile .icon-social-skype-outline {
   font-size: 2.4rem;
+}
+
+.profile--active .profile__info {
+  top: 0;
+  left: 0;
+  max-width: 100%;
+  -webkit-transform: none;
+  transform: none;
+}
+.profile--active .profile__description {
+  display: block;
 }
 
 .social {

@@ -1,7 +1,8 @@
 .profile{
     position: relative;
-    padding: 4rem;
+    padding: 4rem;    
     &__content{
+        position: relative;
         width: 100%;
         display: flex;
         justify-content: end;
@@ -45,6 +46,12 @@
         line-height: 2.4rem;
         letter-spacing: 0.015em;
         color: #3d3d3d;        
+    }
+    &__description{
+        display: none;
+        margin-bottom: 2rem;
+        font-size: 2rem;
+        font-family: $regular;
     }
     &__button{
         margin-bottom: 4rem;
@@ -99,7 +106,20 @@
         font-size: 2rem;
         color: #000;                
     }
+
     .icon-social-skype-outline{
         font-size: 2.4rem;
     }     
+}
+
+.profile--active{
+    .profile__info{
+        top: 0;
+        left: 0;       
+        max-width: 100%;
+        transform: none;        
+    }
+    .profile__description{
+        display: block;
+    }
 }

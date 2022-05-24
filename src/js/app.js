@@ -5,6 +5,8 @@ slideShow('.slider', {
     // isAutoplay: true
 });
 
+showProfile();
+
 });
 
 // Slider carousel
@@ -227,6 +229,15 @@ function burgerMenu() {
     });
 }
 
+// Profile
+function showProfile(){
+    const profileButton = document.querySelector('.profile__button');
+    const profile =  document.querySelector('.profile');
+
+    profileButton.addEventListener('click', () => {
+        profile.classList.toggle('profile--active');
+    });
+}
 
 
 
